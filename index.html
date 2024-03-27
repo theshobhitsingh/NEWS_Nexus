@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NEWS Application</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/axios@0.21.1/dist/axios.min.js"></script>
+    <script src="app.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hahmlet:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="main-nav flex container">
+        <a href="#" class="logo" onclick="reload()">
+          <img src="/logo.png" alt="BrandLogo" class="logo" />
+          <h3>NEWS.com</h3>
+        </a>
+        <div class="nav-links">
+          <ul class="flex">
+            <li
+              class="nav-item hover-links"
+              id="technology"
+              onclick="onNavItemClick('technology')"
+            >
+              Technology
+            </li>
+            <li
+              class="nav-item hover-links"
+              id="finance"
+              onclick="onNavItemClick('finance')"
+            >
+              Finance
+            </li>
+            <li
+              class="nav-item hover-links"
+              id="business"
+              onclick="onNavItemClick('business')"
+            >
+              Business
+            </li>
+            <li
+              class="nav-item hover-links"
+              id="politics"
+              onclick="onNavItemClick('politics')"
+            >
+              Politics
+            </li>
+            <li
+              class="nav-item hover-links"
+              id="sports"
+              onclick="onNavItemClick('sports')"
+            >
+              Sports
+            </li>
+          </ul>
+        </div>
+        <div class="search-bar flex">
+          <div class="search-area">
+            <input
+              type="text"
+              id="news-input"
+              class="news-input"
+              placeholder="Enter your fav topic"
+            />
+            <button class="search-button" id="search-button">Search</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <div class="cards-container container flex" id="cards-container"></div>
+    </main>
+    <template id="temp-card">
+      <div class="card">
+        <div class="card-header">
+          <img
+            src="https://via.placeholder.com/400x200"
+            alt="news-img"
+            id="news-img"
+          />
+        </div>
+        <div class="card-content">
+          <h3 class="news-title" id="news-title">NEWS Title</h3>
+          <h6 class="news-source" id="news-source">Gadgets 16/03/2024</h6>
+          <p class="news-desc" id="news-desc">
+            This is the news decription area.
+          </p>
+        </div>
+      </div>
+    </template>
+    <footer class="flex">
+      <h4>
+        Stay Informed with Real and Unbiased News &copy; 2024. All Rights
+        Reserved.
+      </h4>
+    </footer>
+  </body>
+</html>

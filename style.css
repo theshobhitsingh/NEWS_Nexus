@@ -1,0 +1,164 @@
+* {
+  font-family: "Hahmlet", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  background-color: #004f98;
+}
+
+p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5rem;
+  color: #666;
+}
+
+a {
+  text-decoration: none;
+  color: #004f98;
+}
+
+ul {
+  list-style: none;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin-inline: auto;
+  overflow: hidden;
+}
+
+nav {
+  background-color: #a1caf1;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  left: 0;
+  right: 0;
+  box-shadow: 0 0 5px rgba(2, 2, 100, 0.3);
+  padding: 10px 20px;
+}
+
+.main-nav {
+  justify-content: space-between;
+}
+
+.logo {
+  width: 130px;
+  height: 110px;
+}
+
+.nav-links ul {
+  gap: 30px;
+}
+
+.hover-links {
+  cursor: pointer;
+  color: #004f98;
+  font-size: 18px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.hover-links:hover {
+  color: #00308f;
+}
+
+.hover-links:active {
+  color: #e71d36;
+}
+
+.search-bar {
+  height: 50px;
+  gap: 12px;
+}
+
+.news-input {
+  height: 100%;
+  width: 300px;
+  padding: 10px 12px;
+  border-radius: 5px;
+  border: 2px solid #4a90e2;
+  background-color: #fff;
+  color: #333;
+  font-size: 16px;
+}
+
+.search-button {
+  background-color: #32cd32;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+  background-color: #2eb82e;
+}
+
+main {
+  padding-block: 20px;
+  margin-top: 100px;
+}
+
+.cards-container {
+  margin-top: 30px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: start;
+  row-gap: 22px;
+}
+
+.card {
+  width: 380px;
+  min-height: 400px;
+  border-radius: 4px;
+  box-shadow: 0 0 5px #ccc;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  background-color: #fff;
+}
+
+.card:hover {
+  box-shadow: 1px 1px 8px #aaa;
+  background-color: #f0f0f0;
+  transform: translateY(-3px);
+  color: #000;
+}
+
+.card-header img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 12px;
+}
+
+.news-source {
+  margin-block: 12px;
+}
+
+footer {
+  min-height: 50px;
+  text-align: center;
+  justify-content: center;
+  color: #333;
+  background-color: #ffa600;
+}
